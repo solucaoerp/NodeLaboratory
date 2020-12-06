@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilo.css"> <!--chamada do arquivo de folha de estilos-->
+    <script src="js/calcs.js"></script> <!--chamada do arquivo JavaScript-->
+    <title>Viga Carga Distribuída</title>
+</head>
+<body>
+    <form action="" name="FrmCalc">
+        <div id="Titulo">
+            <h1>Viga Carga Distribuída</h1><hr>
+        </div>
+        <div id="Entradas">
+            <p>
+                <input type="text" name="TxtCargaId" id="TxtCargaId" placeholder="informe o valor da Carga" required="required"><br>
+            </p>
+            <p>
+                <input type="text" name="TxtComprimentoId" id="TxtComprimentoId" placeholder="informe o valor da Comprimento" required="required"><br>
+            </p>
+        </div>
+        <div class="btn">
+            <input type="button" value="Calcular" onClick="CalcularCargaDistribuida()">
+        </div>
+        <div id="VisorResultado">
+            <hr><p>Resultado!</p>
+        </div>
+        <div id="VisorLegenda">
+            <hr><p>Legenda!</p>
+        </div>
+    </form>
+</body>
+</html>
